@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView text_tela_cadastro;
     private TextView text_esqueceu_sua_senha;
 
+    private TextView botao_Perfil_Usuario;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,10 +37,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        botao_Perfil_Usuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Perfil_usuario.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void IniciarComponentes(){
         text_tela_cadastro = findViewById(R.id.textViewCadastrese);
         text_esqueceu_sua_senha = findViewById(R.id.textViewEsqueceuSuaSenha);
+        botao_Perfil_Usuario = findViewById(R.id.buttonEnviar);
     }
 }
