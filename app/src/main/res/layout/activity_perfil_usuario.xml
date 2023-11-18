@@ -42,7 +42,7 @@
 
     <!-- Botão "Minhas Listas" -->
     <Button
-        android:id="@+id/button1MinhasListas"
+        android:id="@+id/buttonMinhasListas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -65,7 +65,7 @@
         android:textSize="18dp"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonAnaliseGastos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
