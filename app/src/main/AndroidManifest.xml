@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MinhaFeira"
         tools:targetApi="31">
         <activity
+            android:name=".MinhasListas"
+            android:exported="false" />
+        <activity
             android:name=".Perfil_usuario"
             android:exported="false" />
         <activity
