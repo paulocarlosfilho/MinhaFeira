@@ -15,6 +15,8 @@ public class Perfil_usuario extends AppCompatActivity {
     private TextView botao_analise_gastos;
     private TextView buttonCriarNovaLista;
 
+    private TextView textViewDicas;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,11 +49,21 @@ public class Perfil_usuario extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        textViewDicas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Perfil_usuario.this, Dicas.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void iniciarComponentes(){
         buttonMinhasListas = findViewById(R.id.buttonMinhasListas);
         buttonCriarNovaLista = findViewById(R.id.buttonCriarNovaLista);
         botao_analise_gastos = findViewById(R.id.buttonAnaliseGastos);
+
+        textViewDicas = findViewById(R.id.textViewDicas);
     }
 }
