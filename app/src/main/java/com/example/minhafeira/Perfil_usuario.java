@@ -13,6 +13,7 @@ public class Perfil_usuario extends AppCompatActivity {
 
     private TextView buttonMinhasListas;
     private TextView botao_analise_gastos;
+    private TextView buttonCriarNovaLista;
 
 
     @Override
@@ -30,6 +31,14 @@ public class Perfil_usuario extends AppCompatActivity {
             }
         });
 
+        buttonCriarNovaLista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Perfil_usuario.this, CriarNovaLista.class);
+                startActivity(intent);
+            }
+        });
+
 
         botao_analise_gastos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +51,7 @@ public class Perfil_usuario extends AppCompatActivity {
 
     private void iniciarComponentes(){
         buttonMinhasListas = findViewById(R.id.buttonMinhasListas);
+        buttonCriarNovaLista = findViewById(R.id.buttonCriarNovaLista);
         botao_analise_gastos = findViewById(R.id.buttonAnaliseGastos);
     }
 }
