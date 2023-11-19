@@ -15,6 +15,10 @@ public class Perfil_usuario extends AppCompatActivity {
     private TextView botao_analise_gastos;
     private TextView buttonCriarNovaLista;
 
+    private TextView textViewDicas;
+    private TextView textViewSuperMercadoProximo;
+    private TextView textViewPromocoesSemana;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,11 +51,39 @@ public class Perfil_usuario extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        textViewDicas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Perfil_usuario.this, Dicas.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewSuperMercadoProximo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Perfil_usuario.this, SuperMercadoProximo.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewPromocoesSemana.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Perfil_usuario.this, PromocoesSemana.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void iniciarComponentes(){
         buttonMinhasListas = findViewById(R.id.buttonMinhasListas);
         buttonCriarNovaLista = findViewById(R.id.buttonCriarNovaLista);
         botao_analise_gastos = findViewById(R.id.buttonAnaliseGastos);
+
+        textViewDicas = findViewById(R.id.textViewDicas);
+        textViewSuperMercadoProximo = findViewById(R.id.textViewSuperMercadoProximo);
+        textViewPromocoesSemana = findViewById(R.id.textViewPromocoesSemana);
     }
 }

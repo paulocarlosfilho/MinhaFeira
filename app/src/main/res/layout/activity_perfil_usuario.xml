@@ -121,7 +121,7 @@
             android:layout_marginStart="20dp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewSuperMercadoProximo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="serif"
@@ -151,7 +151,7 @@
             android:layout_marginStart="20dp"/>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewPromocoesSemana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="serif"
