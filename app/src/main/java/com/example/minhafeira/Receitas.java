@@ -7,27 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class Dicas extends AppCompatActivity {
+public class Receitas extends AppCompatActivity {
 
-    private TextView buttonReceitas;
+    private TextView buttonVoltarReceitas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dicas);
+        setContentView(R.layout.activity_receitas);
 
         iniciarComponentes();
 
-        buttonReceitas.setOnClickListener(new View.OnClickListener() {
+        buttonVoltarReceitas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dicas.this, Receitas.class);
+                Intent intent = new Intent(Receitas.this, Dicas.class);
                 startActivity(intent);
             }
         });
     }
 
     private void iniciarComponentes(){
-        buttonReceitas = findViewById(R.id.buttonReceitas);
+        buttonVoltarReceitas = findViewById(R.id.buttonVoltarReceitas);
     }
 }

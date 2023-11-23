@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#00000000"
+    android:orientation="vertical"
+    tools:context=".Receitas">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewLogo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/minha_feira_logo" />
+
+                <TextView
+                    android:id="@+id/textViewCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="serif"
+                    android:text="Cliente"
+                    android:textColor="#FE5B00"
+                    android:textColorHint="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/container_user" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextViewReceitas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:text="Receitas"
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewBoloDeMandioca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:text="Bolo de Mandioca"
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewBoloDeMandioca"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/bolo_de_mandioca" />
+
+            <TextView
+                android:id="@+id/TextViewIngredientes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10sp"
+                android:fontFamily="serif"
+                android:text="Ingredientes:"
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/TextViewOvos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10sp"
+                android:fontFamily="serif"
+                android:text="* 2 ovos"
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextSopaManteiga"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10sp"
+                android:fontFamily="serif"
+                android:text="* 2 col. de sopa de manteiga"
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewCocoRalado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10sp"
+                android:fontFamily="serif"
+                android:text="* Côco ralado a gosto"
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewAcucar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10sp"
+                android:fontFamily="serif"
+                android:text="* 1 e 1/2 de Açúcar"
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewLeiteCoco"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10sp"
+                android:fontFamily="serif"
+                android:text="* 200ml de Leite de Côco"
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewMadiocaCruaRalada"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10sp"
+                android:fontFamily="serif"
+                android:text="* 500 de Mandioca crua Ralada"
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewFazerReceitaBoloMandiocaSimples"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="serif"
+                android:text="Modo de Preparo:"
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewPasso1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="serif"
+                android:text="* Passo 1 - Misture os ovos, o açucar e a manteiga em uma tijela em temperatura ambiente. Meixa bem."
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewPasso2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="serif"
+                android:text="* Passo 2 - Acrescente o Leite de Côco e quase toda a tapioca ralada - reservar cerca de 15 gramas. Se você não quiser adicinar côco ralado, agora é a hora."
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewPasso3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="serif"
+                android:text="* Passo 3 - Despeje numa forma untada com farinha."
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewPasso4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="serif"
+                android:text="* Passo 4 - Enfeite com o restante da Mandioca Ralada"
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewPasso5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="serif"
+                android:text="* Passo 5 - Leve ao forno preaquecido e asse a 180ªC por cerca de 50 minutos, até dorar nas bordas."
+                android:textColor="#FE5B00"
+                android:textColorHint="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/buttonVoltarReceitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="Voltar"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
